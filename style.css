@@ -1,0 +1,143 @@
+body {
+    background-image: url("./tac-toe\ img.jpg");
+    background-size: contain;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    animation: colorChange 8s infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      color: red;
+    }
+    25% {
+      color: blue;
+    }
+    50% {
+      color: rgb(242, 250, 21);
+    }
+    75% {
+      color: rgb(40, 39, 39);
+    }
+    100% {
+      color: red;
+    }
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 30px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #cd6b36;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #555555;
+  }
+  
+  #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 300px;
+    margin-bottom: 20px;
+    position: relative;
+
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #566d93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cell:hover {
+    background-color: #e5e5e5;
+  }
+
+  #players {
+    position: fixed;
+    bottom: 71%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #1d1b1c;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f0e4e4;
+    color: #3f3c3c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #90b142;
+  }
+  
+ .backBtn{
+   margin-left: 150px;
+}
+
+
+  .winner {
+    background-color: #78c378;
+  }
+  
+  .tie {
+    background-color: #ffcc66;
+  }
+  
